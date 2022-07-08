@@ -390,8 +390,15 @@ ul {
   background-color: #f5f4fa;
 }
 .ul-poster {
+  width: 1170px;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .ul-poster li {
@@ -403,6 +410,12 @@ ul {
   margin: 0 10px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ul-poster .title,
+.ul-poster .text {
+  width: 100%;
 }
 .poster .main-poster .title {
   font-family: var(--main-font);
