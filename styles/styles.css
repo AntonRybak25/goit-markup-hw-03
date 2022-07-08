@@ -7,24 +7,24 @@ body {
   font-family: var(--main-font);
 }
 .container {
-  max-width: 1600px;
+  width: 1600px;
 }
 .page-header {
   background-color: #ffffff;
   width: 100%;
-  background: #ffffff;
-  padding: 0px 215px 0px 215px;
+  align-items: center;
   box-sizing: border-box;
   height: 80px;
   max-width: 1600px;
   padding: 32px 0px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 .page-header .container {
+  width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 .page-header .logo {
@@ -72,7 +72,6 @@ ul {
 .mailto-contacts,
 .tel-contacts {
   font-family: var(--main-font);
-  padding-right: 215px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -82,6 +81,7 @@ ul {
   cursor: pointer;
   display: flex;
 }
+
 .page-header .ul-contacts li a:hover {
   color: #2196f3;
 }
@@ -93,6 +93,7 @@ ul {
   left: 0px;
   top: 80px;
   text-decoration: none;
+  align-items: center;
 }
 .section-button .title {
   font-family: var(--main-font);
@@ -122,7 +123,7 @@ ul {
 }
 .section-button .button p {
   font-family: var(--main-font);
-
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -132,10 +133,11 @@ ul {
 
 .section-details .block {
   display: flex;
-
-  padding: 94px 215px 94px 215px;
-  width: 1170px;
+  padding-top: 90px;
+  max-width: 1170px;
   height: 100px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 .section-details .title {
@@ -159,20 +161,46 @@ ul {
   color: #757575;
 }
 
+.section-doing .images {
+  width: 370px;
+  height: 294px;
+  top: 1060px;
+  left: 215px;
+}
+
+.images-one {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 215px;
+}
+.images-two {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 615px;
+}
+.images-three {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 1015px;
+}
+
 .section-doing {
   width: 1170px;
   height: 385px;
+  padding: 95px 215px 95px 215px;
 }
 .section-doing .title-doing {
-  position: absolute;
   width: 376px;
   height: 42px;
-  margin: 95px 612px 530px 612px;
+  display: inline-block;
 }
 
 .title-doing {
   font-family: var(--main-font);
-
+  margin: 0px 395px 50px 395px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -183,11 +211,16 @@ ul {
 
 .img-team {
   width: 270px;
+  margin-left: 30px;
 }
-
+.section-team {
+  background: #f5f4fa;
+  width: 1600px;
+  height: 650px;
+  display: flex;
+}
 .section-team .title {
   font-family: var(--main-font);
-
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -198,22 +231,24 @@ ul {
 
 .title-teams {
   font-family: var(--main-font);
-
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: #212121;
 }
+.section-team .ul-team {
+  display: flex;
+}
 
 .section-team .text {
   font-family: var(--main-font);
-
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
 }
 
 /*Footer*/
@@ -222,10 +257,11 @@ ul {
   background-color: #2f303a;
   text-decoration: none;
   list-style: none;
+  width: 1600px;
+  height: 250px;
 }
 .footer .logo {
   font-family: var(--secondary-font);
-
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -238,7 +274,7 @@ ul {
 }
 .address {
   font-family: var(--main-font);
-
+  border: 110px 1155px 120px 215px;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -259,10 +295,25 @@ ul {
 }
 
 /** PORTFOLIO*/
-
+.page-header-portfolio {
+  max-width: 1600px;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  height: 80px;
+  max-width: 1600px;
+  padding: 32px 0px;
+}
+.page-header-portfolio .container {
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 215px;
+  padding-right: 215px;
+}
 .page-header-portfolio .logo {
   font-family: var(--secondary-font);
-
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -285,6 +336,7 @@ ul {
 .page-header-portfolio .ul-contacts li a:hover {
   color: #2196f3;
 }
+
 /*MAIN*/
 
 .button-portfolio .all {
@@ -300,7 +352,7 @@ ul {
 .button-portfolio,
 .web .program .design .marketing {
   font-family: var(--main-font);
-
+  margin-right: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -308,6 +360,7 @@ ul {
   color: #212121;
   background-color: #f5f4fa;
 }
+
 .poster .main-poster .title {
   font-family: var(--main-font);
 
