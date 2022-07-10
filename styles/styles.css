@@ -283,32 +283,37 @@ ul {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  margin-left: 215px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+  margin-top: 60px;
+  padding: 0 0 10px 0;
 }
 .footer .logo span {
   color: #2196f3;
 }
 .footer-contacts {
-  padding: 20px 1200px 40px 215px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 250px;
+}
+.footer-contacts li {
+  padding: 0 0 10px 0;
 }
 .address {
   font-family: var(--main-font);
-
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
-  display: block;
 }
 .footer .mailto-footer,
 .tel-footer {
   font-family: var(--main-font);
-
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -316,6 +321,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   list-style: none;
+  padding-top: 5px;
 }
 
 /** PORTFOLIO*/
@@ -368,7 +374,10 @@ ul {
 .button-portfolio {
   max-width: 1600px;
 }
-
+.button-portfolio button {
+  border: none;
+  cursor: pointer;
+}
 .button-portfolio .all {
   font-family: var(--main-font);
   font-weight: 500;
@@ -376,19 +385,30 @@ ul {
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: #ffffff;
-  background-color: #2196f3;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-left: 495px;
+  padding: 6px 20px;
+  margin-right: 10px;
 }
-.button-portfolio,
-.web .program .design .marketing {
+.button-portfolio .web,
+.button-portfolio .program,
+.button-portfolio .design,
+.button-portfolio .marketing {
   font-family: var(--main-font);
-  margin-right: 30px;
+  margin-right: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: #212121;
-  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-top: 100px;
+  padding: 6px 20px;
 }
+
 .ul-poster {
   width: 1170px;
   display: flex;
@@ -399,6 +419,8 @@ ul {
   align-items: center;
   margin: 0 auto;
   padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .ul-poster li {
@@ -407,7 +429,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px;
+  margin: 30px 10px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -425,6 +447,7 @@ ul {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
+  margin: 20px 0 0 25px;
 }
 .poster .main-poster .text {
   font-family: var(--main-font);
@@ -434,4 +457,56 @@ ul {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
+  margin: 0 0 20px 25px;
+}
+.footer {
+  background-color: #2f303a;
+  text-decoration: none;
+  list-style: none;
+  max-width: 1600px;
+  height: 250px;
+}
+.footer .logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 60px;
+  padding: 0 0 10px 0;
+}
+.footer .logo span {
+  color: #2196f3;
+}
+.footer-contacts {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 250px;
+}
+.footer-contacts li {
+  padding: 0 0 10px 0;
+}
+.address {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer .mailto-footer,
+.tel-footer {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  list-style: none;
+  padding-top: 5px;
 }
