@@ -311,25 +311,17 @@ nav {
 
 /** PORTFOLIO*/
 .page-header-portfolio {
-}
-.page-header-portfolio {
-  max-width: 1600px;
+  background-color: #ffffff;
   width: 100%;
-  align-items: center;
-  box-sizing: border-box;
-  height: 80px;
-  padding: 32px 0px;
-  display: flex;
-  justify-content: space-between;
+  border-bottom: #000000;
+  max-width: 1600px;
 }
 .page-header-portfolio .container {
-  width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 215px;
-  padding-right: 215px;
 }
+
 .page-header-portfolio .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -338,6 +330,7 @@ nav {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+  margin-right: 95px;
 }
 .page-header-portfolio .logo span {
   color: #2196f3;
@@ -353,6 +346,7 @@ ul {
 }
 .page-header-portfolio .ul-contacts li a:hover {
   color: #2196f3;
+  list-style: none;
 }
 
 /*MAIN*/
@@ -397,11 +391,8 @@ ul {
 .ul-poster {
   width: 1170px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
+
   margin: 0 auto;
   padding: 0;
   padding-top: 50px;
