@@ -211,6 +211,7 @@ nav {
   letter-spacing: 0.03em;
   color: #212121;
   padding-left: 390px;
+  margin-top: 95px;
 }
 
 .img-team {
@@ -228,6 +229,7 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 185px;
 }
 
 .title-teams {
@@ -245,7 +247,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px;
+  margin: 0 30px 0 0;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -267,7 +269,6 @@ nav {
   text-decoration: none;
   list-style: none;
   max-width: 1600px;
-  padding-left: 15px;
 }
 .footer .logo {
   font-family: var(--secondary-font);
@@ -276,15 +277,18 @@ nav {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-decoration: none;
   margin-top: 60px;
   padding: 0 0 10px 0;
 }
 .footer .logo span {
   color: #2196f3;
 }
-
+.footer-contacts {
+  padding: 60px 0;
+}
 .footer-contacts li {
-  padding: 0 0 10px 0;
+  padding-top: 10px;
 }
 .address {
   font-weight: 400;
@@ -300,6 +304,8 @@ nav {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  list-style: none;
   padding-top: 5px;
 }
 
@@ -419,8 +425,6 @@ ul {
   width: 100%;
 }
 .poster .main-poster .title {
-  font-family: var(--main-font);
-
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -429,63 +433,10 @@ ul {
   margin: 20px 0 0 25px;
 }
 .poster .main-poster .text {
-  font-family: var(--main-font);
-
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0 0 20px 25px;
-}
-.footer {
-  background-color: #2f303a;
-  text-decoration: none;
-  list-style: none;
-  max-width: 1600px;
-  height: 250px;
-}
-.footer .logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-decoration: none;
-  margin-top: 60px;
-  padding: 0 0 10px 0;
-}
-.footer .logo span {
-  color: #2196f3;
-}
-.footer-contacts {
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 0 250px;
-}
-.footer-contacts li {
-  padding: 0 0 10px 0;
-}
-.address {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.footer .mailto-footer,
-.tel-footer {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  list-style: none;
-  padding-top: 5px;
 }
