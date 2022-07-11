@@ -9,30 +9,27 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .page-header {
   background-color: #ffffff;
   width: 100%;
-  align-items: center;
-  box-sizing: border-box;
-  height: 80px;
-  padding: 32px 0px;
+  border-bottom: #000000;
+  max-width: 1600px;
 }
 
 .page-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 215px;
-  padding-right: 215px;
-  box-sizing: border-box;
 }
 
 .page-header .logo {
   font-family: var(--secondary-font);
-
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -54,21 +51,32 @@ ul {
 
 .site-nav,
 .studio,
-.portfolio,
-.contacts {
-  font-family: var(--main-font);
+.portfolio {
   display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #212121;
-  text-decoration: none;
-  cursor: pointer;
+  margin: 0 50px 0 0;
+  padding: 0;
 }
-
-.site-nav li {
-  margin-right: 50px;
+.contacts {
+  margin-right: 0;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+nav {
+  margin: 0;
+}
+.site-nav a {
+  padding: 32px 0;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .page-header .studio {
@@ -78,36 +86,33 @@ ul {
 .ul-contacts,
 .mailto-contacts,
 .tel-contacts {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #757575;
-  text-decoration: none;
-  cursor: pointer;
   display: flex;
 }
-.ul-contacts li {
+.ul-contacts,
+.mailto-contacts {
   margin-right: 50px;
+  padding: 0;
 }
-
+.ul-contacts a {
+  text-decoration: none;
+  cursor: pointer;
+}
 .page-header .ul-contacts li a:hover {
   color: #2196f3;
 }
 /*Main*/
-.section-button {
+.section-button .container {
   background-color: #2f303a;
+  padding: 200px 0;
+  margin: 0;
   width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  text-decoration: none;
-  align-items: center;
 }
 .section-button .title {
-  font-family: var(--main-font);
-  padding: 200px 450px 280px 450px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -115,24 +120,18 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0 auto;
 }
 .section-button .button {
   background: #2196f3;
-  position: absolute;
-  margin-top: 40px;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   cursor: pointer;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 .section-button .button p {
-  font-family: var(--main-font);
   align-items: center;
   font-weight: 700;
   font-size: 16px;
@@ -141,17 +140,21 @@ ul {
   color: #ffffff;
 }
 
-.section-details .block {
-  display: flex;
-  padding-top: 90px;
-  max-width: 1170px;
-  height: 100px;
+.section-details .container {
   padding-left: 215px;
   padding-right: 215px;
+  margin: 0;
+  width: 1600px;
+}
+.section-details .block {
+  display: flex;
+  padding: 90px 0 0 0;
+  max-width: 1170px;
+  height: 100px;
+  margin: 0;
 }
 
 .section-details .title {
-  font-family: var(--main-font);
   margin-right: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -162,7 +165,6 @@ ul {
 }
 
 .section-details .text {
-  font-family: var(--main-font);
   margin-right: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -177,7 +179,12 @@ ul {
   top: 1060px;
   left: 215px;
 }
-
+.section-doing .container {
+  padding-left: 215px;
+  padding-right: 215px;
+  margin: 0;
+  width: 1600px;
+}
 .images-one {
   position: absolute;
   width: 370px;
@@ -197,39 +204,24 @@ ul {
   left: 1015px;
 }
 
-.section-doing {
-  max-width: 1170px;
-  height: 385px;
-  padding: 95px 215px 95px 215px;
-}
-
 .title-doing {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
-  text-align: center;
   line-height: 42px;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  padding-left: 390px;
 }
 
 .img-team {
   width: 270px;
 }
+
 .section-team {
   max-width: 1600px;
-  background: #f5f4fa;
-  max-width: 1600px;
-  height: 650px;
-  display: flex;
-  margin-top: 95px;
-  padding-left: 215px;
-  padding-right: 215px;
-  box-sizing: border-box;
+  background-color: #f5f4fa;
 }
 .section-team .title {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -239,7 +231,6 @@ ul {
 }
 
 .title-teams {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -261,7 +252,6 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 .section-team .text {
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -277,7 +267,7 @@ ul {
   text-decoration: none;
   list-style: none;
   max-width: 1600px;
-  height: 250px;
+  padding-left: 15px;
 }
 .footer .logo {
   font-family: var(--secondary-font);
@@ -286,25 +276,17 @@ ul {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #ffffff;
-  text-decoration: none;
   margin-top: 60px;
   padding: 0 0 10px 0;
 }
 .footer .logo span {
   color: #2196f3;
 }
-.footer-contacts {
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 0 250px;
-}
+
 .footer-contacts li {
   padding: 0 0 10px 0;
 }
 .address {
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -313,14 +295,11 @@ ul {
 }
 .footer .mailto-footer,
 .tel-footer {
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  list-style: none;
   padding-top: 5px;
 }
 
