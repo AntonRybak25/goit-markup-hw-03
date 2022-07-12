@@ -11,7 +11,7 @@ body {
 .container {
   width: 1200px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 215px;
   justify-content: center;
 }
 
@@ -392,9 +392,9 @@ ul {
   width: 1170px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 0;
 }
 
 .ul-poster li {
