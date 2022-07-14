@@ -11,14 +11,12 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .container {
@@ -50,8 +48,6 @@ body {
 /* лого первая часть */
 .logo {
   margin-right: 95px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 
   color: var(--logo-color);
   font-family: "Raleway", sans-serif;
@@ -368,7 +364,7 @@ body {
 }
 
 .projects-list .item:nth-child(n + 6) {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .projects-list .no-gap {
@@ -393,7 +389,7 @@ body {
   margin-bottom: 4px;
 
   color: var(--title-color);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
