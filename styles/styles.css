@@ -23,8 +23,6 @@ body {
 
 .container {
   width: 1200px;
-  margin-top: 0;
-  margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -267,13 +265,15 @@ body {
 }
 
 .team .item {
-  padding-bottom: 30px;
   --background-color: #ffffff;
   background-color: var(--background-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team .title-text {
+  padding: 30px 0;
 }
 
 .team .item + .item {
@@ -282,7 +282,6 @@ body {
 
 .team .no-gap {
   display: block;
-  margin-bottom: 30px;
 }
 .team-member {
   margin: 0;
@@ -369,7 +368,7 @@ body {
 }
 
 .projects-list .item:nth-child(n + 6) {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .projects-list .no-gap {
